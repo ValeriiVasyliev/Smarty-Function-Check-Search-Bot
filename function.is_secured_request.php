@@ -15,13 +15,29 @@
  */
  
 /*
-    {is_secured_request assign="is_secured_request_status"}
-    
-    {is_secured_request ip = "127.0.0.1" agent = "google" assign="is_secured_request_status"}
-    
-    {if $is_secured_request_status}
+# Example
 
-    {/if}
+1.
+
+````
+{is_secured_request assign="is_secured_request_status"}
+
+{if $is_secured_request_status}
+
+    {* your code *}
+
+{/if}
+````
+2.
+
+````
+{is_secured_request ip = "127.0.0.1" agent = "google" assign="is_secured_request_status"}
+
+{if $is_secured_request_status}
+
+    {* your code *}
+
+{/if}
 */
 function smarty_function_is_secured_request($params, &$smarty) {
     
