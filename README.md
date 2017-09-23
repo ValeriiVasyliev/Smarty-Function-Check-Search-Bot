@@ -2,7 +2,7 @@
 
 Checking whether the agent is a search bot
 
-#Install
+# Install
 
 Copy to directory smarty/libs/plugins
 
